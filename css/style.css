@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: block;
+    background-color: burlywood;
+    height: 100vh;
+    width: 1000px;
+    margin: auto;
+}
+
+.converter {
+    display: flex;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    background-color: chocolate;
+    flex-wrap: wrap;
+}
+
+.result {
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+}

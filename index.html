@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konwerter walut JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
 </head>
+
 <body>
-    
-<form>
+    <div class="container">
+        <div class="converter">
+            <form class="form js-form">
+                <fieldset class="fieldset">
+                    <legend>Konwerter walut</legend>
+                    <div class="form__item">
+                        <label>Podaj kwotę PLN do przeliczenia:
+                            <input class="amount js-amount" type="number">
+                        </label>
+                    </div>
+                    <div class="form__item">
+                        <select class="js-currency">
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </div>
+                    <div class="form__item">
+                        <button>Przelicz kurs</button>
+                    </div>
+                </fieldset>
+                <div class="form__item result js-result">
+                    Tutaj zobaczysz przeliczenie waluty
+                </div>
+            </form>
 
-    <label>Podaj kwotę PLN do przeliczenia: 
-        <input type="number">
-    </label>
-    <select>
-        <option value="USD">USD</option>
-        <option value="GBP">GBP</option>
-        <option value="EUR">EUR</option>
-    </select>
-
-
-
-</form>
-
+        </div>
+    </div>
 
 </body>
+
 </html>
