@@ -19,19 +19,21 @@
                 <fieldset class="fieldset">
                     <legend>Konwerter walut</legend>
                     <div class="form__item">
-                        <label>Podaj kwotę PLN do przeliczenia:
-                            <input class="amount js-amount" type="number">
+                        <label class="label">Podaj kwotę PLN do wymiany:
+                            <input class="amount js-amount" type="number" placeholder="proszę wpisać kwotę" required step="0.01" min="1" max="1000000000">
                         </label>
                     </div>
                     <div class="form__item">
-                        <select class="js-currency">
+                        <label class="label">Waluta na którą wymieniamy:
+                        <select class="button js-currency">
                             <option value="USD">USD</option>
                             <option value="GBP">GBP</option>
                             <option value="EUR">EUR</option>
                         </select>
+                    </label>
                     </div>
                     <div class="form__item">
-                        <button>Przelicz kurs</button>
+                        <button class="button">Przelicz kurs</button>
                     </div>
                 </fieldset>
                 <div class="form__item result js-result">

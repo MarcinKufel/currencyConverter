@@ -4,9 +4,8 @@
 
 .container {
     display: block;
-    background-color: burlywood;
-    height: 100vh;
-    width: 1000px;
+    background-image: url("../images/currency.png");
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -18,17 +17,77 @@
     flex-wrap: wrap;
 }
 
+.fieldset {
+
+    text-align: center;
+    font-weight: 700;
+    border-radius: 3%;
+}
+
 .form {
     display: flex;
-    width: 500px;
+    max-width: 450px;
     align-items: center;
     justify-content: center;
-    background-color: chocolate;
+    background-color: #ccc;
+    flex-wrap: wrap;
+    margin: 20px;
+    font-size: 25px;
+    border-radius: 6%;
+    
+    
+}
+
+.form__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+
+ }
+
+ .result {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+.button {
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15%;
+    border: none;
+}
+
+.button:hover {
+    background-color: rgb(177, 173, 173);
+}
+
+.label {
+    max-width: 400px;
     flex-wrap: wrap;
 }
 
-.result {
-    display: flex;
-    width: 1000px;
-    justify-content: center;
+.amount {
+    margin: 5px;
+    border: none;
+    text-align: center;
 }
+
+.amount:hover {
+    box-shadow: 0px 0px 3px rgb(228, 17, 17);
+    border: none;
+}
+
+.amount:focus {
+ background-color: rgba(189, 226, 121, 0.438);
+ border: none;
+}
+
+.amount:invalid {
+    background-color: rgba(199, 21, 21, 0.37);
+}
+
