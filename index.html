@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konwerter walut JS</title>
+    <title>Currency converter JS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
@@ -17,27 +17,29 @@
         <div class="converter">
             <form class="form js-form">
                 <fieldset class="fieldset">
-                    <legend>Konwerter walut</legend>
+                    <legend>Currency converter</legend>
                     <div class="form__item">
-                        <label class="label">Podaj kwotę PLN do wymiany:
-                            <input class="amount js-amount" type="number" placeholder="proszę wpisać kwotę" required step="0.01" min="1" max="1000000000">
+                        <label class="label">Write amount of PLN to exchange:
+                            <input class="amount js-amount" type="number" placeholder="proszę wpisać kwotę" required
+                                step="0.01" min="1" max="1000000000">
                         </label>
                     </div>
                     <div class="form__item">
-                        <label class="label">Waluta na którą wymieniamy:
-                        <select class="button js-currency">
-                            <option value="USD">USD</option>
-                            <option value="GBP">GBP</option>
-                            <option value="EUR">EUR</option>
-                        </select>
-                    </label>
+                        <label class="label">Currency we want to exchange:
+                            <select class="button js-currency">
+                                <option value="USD">USD</option>
+                                <option value="GBP">GBP</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                        </label>
                     </div>
                     <div class="form__item">
-                        <button class="button">Przelicz kurs</button>
+                        <button class="button">
+                            Convert</button>
                     </div>
                 </fieldset>
                 <div class="form__item result js-result">
-                    Tutaj zobaczysz przeliczenie waluty
+                    Here will be result
                 </div>
             </form>
 
