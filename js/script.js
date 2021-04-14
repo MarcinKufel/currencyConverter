@@ -7,9 +7,6 @@ let rateUSD = 3.33;
 let rateEUR = 4.44;
 let rateGBP = 5.55;
 
-
-console.log(currencyElement);
-
 formElement.addEventListener("submit", (event) => {
     event.preventDefault();
 
