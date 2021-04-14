@@ -4,7 +4,8 @@
 
 .container {
     display: block;
-    background-image: url("../images/currency.png");
+    background-image: url("../images/image.jpg");
+    background-repeat:round;
     max-width: 1000px;
     margin: auto;
 }
